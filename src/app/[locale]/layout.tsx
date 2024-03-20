@@ -1,3 +1,5 @@
+import { NavbarDemo } from "@/components/Navbar";
+
 
 
 export default function LocaleLayout({
@@ -9,7 +11,12 @@ export default function LocaleLayout({
   }) {
     return (
       <html lang={locale}>
-        <body>{children}</body>
+        <body>
+          <div className="relative w-full flex items-center justify-center">
+          <NavbarDemo/>
+          </div>
+          {children}
+        </body>
       </html>
     );
   }

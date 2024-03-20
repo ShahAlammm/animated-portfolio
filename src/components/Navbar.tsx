@@ -1,35 +1,34 @@
+"use client";
+import React, { useState } from "react";
+import { HoveredLink, Menu, MenuItem } from "../components/ui/navbar-menu";
+import { cn } from "@/utils/cn";
 
-import React from "react";
-import { FloatingNav } from "./ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
-const Navbar = () => {
+export function NavbarDemo() {
+  return (
+    <div className="relative w-full flex items-center justify-center">
+      <Navbar className="top-2" />
+     
+    </div>
+  );
+}
 
-    const navItems = [
-        {
-            name: "Home",
-            link: "/",
-            icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-        },
-        {
-            name: "About",
-            link: "#",
-            icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-        },
-        {
-            name: "Contact",
-            link: "#",
-            icon: (
-                <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
-            ),
-        },
-    ];
-    return (
+function Navbar({ className }: { className?: string }) {
+  const [active, setActive] = useState<string | null>(null);
+  return (
+    <div
+      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+    >
+      <Menu setActive={setActive}>
+        <MenuItem setActive={setActive} active={active} item="Home">
 
-        <div className="relative  w-full">
-            <FloatingNav navItems={navItems} />
-        </div>
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="About">
 
-    );
-};
+        </MenuItem>
+        <MenuItem setActive={setActive} active={active} item="Contact">
 
-export default Navbar;
+        </MenuItem>
+      </Menu>
+    </div>
+  );
+}
