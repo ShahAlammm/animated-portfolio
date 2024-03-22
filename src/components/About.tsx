@@ -1,15 +1,14 @@
-import { TextGenerate } from "@/utils/Text/TextGenerate";
-
+import { Lamp } from "@/utils/Lamp/Lamp";
 
 
 
 const About = () => {
     return (
-        <div className="mt-24">
-            <div>
-            <TextGenerate/>
-            </div>
-        </div>
+        <>
+
+            <div><Lamp /></div>
+
+        </>
     );
 };
 

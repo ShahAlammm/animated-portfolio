@@ -56,7 +56,7 @@ export const TextRevealCard = ({
       onMouseMove={mouseMoveHandler}
       ref={cardRef}
       className={cn(
-        "p-6 relative overflow-hidden w-full",
+        "relative overflow-hidden w-full",
         className
       )}
     >

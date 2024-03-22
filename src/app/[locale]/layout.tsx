@@ -1,4 +1,5 @@
 import { NavbarDemo } from "@/components/Navbar";
+import StarsCanvas from "@/components/StarBackground";
 
 
 
@@ -11,10 +12,11 @@ export default function LocaleLayout({
   }) {
     return (
       <html lang={locale}>
-        <body>
+        <body className="">
           <div className="relative w-full flex items-center justify-center">
           <NavbarDemo/>
           </div>
+          <StarsCanvas/>
           {children}
         </body>
       </html>
