@@ -4,54 +4,45 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from '../../public/NavLogo.png';
+import { FaHome } from "react-icons/fa";
+import { FaUserGraduate } from "react-icons/fa";
+import { MdCall } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="w-full h-[65px] fixed top-0  z-50 px-10">
-    {/* shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md */}
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <Link
-          href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
-        >
-          <Image
-            src={logo}
-            alt="logo"
-            width={70}
-            height={70}
-            className="cursor-pointer hover:animate-slowspin"
-          />
-
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            Shah Alam Dev
-          </span>
-        </Link>
-
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <Link href="#about-me" className="cursor-pointer">
-              About me
-            </Link>
-            <Link href="#skills" className="cursor-pointer">
-              Skills
-            </Link>
-            <Link href="#projects" className="cursor-pointer">
-              Projects
-            </Link>
+    <div className="navbar fixed z-50">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </div>
+          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><Link href={'#'}>Home</Link></li>
+            <li><Link href={'#'}>About</Link></li>
+            <li><Link href={'#'}>Contact</Link></li>
+          </ul>
         </div>
-
+        <Link href={'/'} className="btn btn-ghost text-xl md:ml-16">daisyUI</Link>
+      </div>
+      <div className="navbar-center hidden md:flex justify-center items-center glass rounded-full lg:w-1/4 button-primary">
+        <ul className="menu menu-horizontal px-1 space-x-4 font-bold text-white">
+          <li><Link href={'#'}><FaHome className="text-xl"/></Link></li>
+          <li><Link href={'#'}><FaUserGraduate className="text-xl"/></Link></li>
+          <li><Link href={'#'}><MdCall className="text-xl"/></Link></li>
+        </ul>
+      </div>
+      <div className="navbar-end mr-5 md:mr-16">
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
 
             <Link href={social.link} key={social.name}>
-            <Image
-              src={social.src}
-              alt={social.name}
+              <Image
+                src={social.src}
+                alt={social.name}
 
-              width={24}
-              height={24}
-            />
+                width={24}
+                height={24}
+              />
             </Link>
           ))}
         </div>
@@ -61,3 +52,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

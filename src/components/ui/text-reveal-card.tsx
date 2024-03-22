@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState, memo } from "react";
 import { motion } from "framer-motion";
-import { twMerge } from "tailwind-merge";
 import { cn } from "@/utils/cn";
 
 export const TextRevealCard = ({
@@ -56,7 +55,7 @@ export const TextRevealCard = ({
       onMouseMove={mouseMoveHandler}
       ref={cardRef}
       className={cn(
-        "relative overflow-hidden w-full",
+        "relative overflow-hidden w-full z-40",
         className
       )}
     >
@@ -70,7 +69,7 @@ export const TextRevealCard = ({
           animate={
             isMouseOver
               ? {
-                  opacity: widthPercentage > 0 ? 1 : 0,
+                  opacity: widthPercentage > 0.5 ? 1 : 0.5,
                   clipPath: `inset(0 ${100 - widthPercentage}% 0 0)`,
                 }
               : {

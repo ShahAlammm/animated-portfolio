@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import { SparklesIcon } from '@heroicons/react/24/solid'
 import Image from 'next/image';
 import image from '../../public/mainIconsdark.svg';
+import { MovingBorder } from '@/utils/Button/MovingButton';
+
 const Hero = () => {
   return (
     <motion.div
@@ -41,12 +43,12 @@ const Hero = () => {
           I&apos;m a Full stack Software Engineer with experience in Website <br /> and Software development. Check out my projects and skills
         </motion.p>
 
-        <motion.a
+        <motion.div
           variants={slideInFromLeft(1)}
-          className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
+          className=' z-40'
         >
-          Learn More!
-        </motion.a>
+        <MovingBorder />
+        </motion.div>
       </div>
 
       {/*============= Icons ==================*/}
