@@ -14,7 +14,7 @@ export default function Home () {
   const t = useTranslations('Index');
   return (
     <>
-      <main className="h-screen w-full flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <main className="w-full flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
         <TracingBeam className='px-4'>
           <Spotlight
             className="-top-40 left-0 md:left-60 lg:left-72 md:-top-20"
@@ -22,7 +22,7 @@ export default function Home () {
           />
           <div >
             <Banner />
-            {/* <About/> */}
+            <About/>
           </div>
         </TracingBeam>
       </main>
