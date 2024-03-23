@@ -9,10 +9,10 @@ const SkillText = () => {
     <div className='w-full h-auto flex flex-col items-center justify-center'>
 <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[10px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          className="Welcome-box py-[16px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
 
-          <SparklesIcon className="text-[#b49bff] mr-[5px] h-8 w-8" />
+          <SparklesIcon className="text-[#b49bff] mr-[5px] h-8 w-10" />
           <h1 className="Welcome-letter text-[14px]">
             Think better with Next js 14
           </h1>

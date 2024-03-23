@@ -12,7 +12,7 @@ export function TextLoop() {
       text: "Is",
     },
     {
-      text: "Aceternity.",
+      text: "Shah Alam.",
       className: "text-blue-500",
     },
   ];

@@ -17,6 +17,7 @@ import mongodb from '../../public/mongodb.png';
 import mui from '../../public/mui.png';
 import express from '../../public/express.png';
 import firebase from '../../public/Firebase.png';
+import figma from '../../public/figma.png';
 
 export const Skill_data = [
     {
@@ -122,10 +123,10 @@ export const Skill_data = [
 
   export const Frontend_skill = [
     {
-      skill_name: "Html 5",
-      Image: html,
-      width: 80,
-      height: 80,
+      skill_name: "Figma",
+      Image: figma,
+      width: 44,
+      height: 44,
     },
     {
       skill_name: "Css",
@@ -274,6 +275,53 @@ export const Skill_data = [
     },
   ];
 
+
+  export const experiences = [
+    {
+      title: "React.js",
+      // company_name: "Starbucks",
+      icon: react,
+      iconBg: "#383E56",
+      date: "My favorite one",
+      points: [
+        "Developed a dynamic e-commerce platform using React.js, featuring a modularized architecture with reusable components. Implemented smooth user interactions and real-time updates, enhancing the overall user experience.",
+        "Demonstrated expertise in React's component-based architecture, breaking down complex UIs into manageable, reusable components. Leveraged component lifecycle methods and hooks for efficient state management, resulting in a scalable and maintainable codebase.",
+      ],
+    },
+    {
+      title: "Tailwind CSS",
+      // company_name: "Tesla",
+      icon: tailwind,
+      iconBg: "#E6DEDD",
+      date: "Mostly I use it",
+      points: [
+        "Employed Tailwind CSS to swiftly implement a responsive resume layout, leveraging its utility-first approach for efficient design.",
+        "Ensured code consistency and maintainability by utilizing Tailwind's predefined utility classes, promoting a unified design language throughout the project.",
+      ],
+    },
+    {
+      title: "MongoDB",
+      // company_name: "Shopify",
+      icon: mongodb,
+      iconBg: "#383E56",
+      date: "Backend that I know",
+      points: [
+        "Proficient in MongoDB for seamless data management. Implemented robust database structures and optimized queries to enhance performance in web applications.",
+        "Designed and implemented scalable MongoDB databases, ensuring efficient handling of data growth. Utilized MongoDB's flexible schema to adapt to evolving project requirements.",
+      ],
+    },
+    {
+      title: "Next.js",
+      // company_name: "Meta",
+      icon: next,
+      iconBg: "#E6DEDD",
+      date: "Now I exploring it",
+      points: [
+        "Explored Next.js to implement server-side rendering, enhancing application performance and SEO. Leveraged the framework's capabilities to create fast-loading, dynamic React applications.",
+        "Developed seamless client-side navigation with Next.js routing. Integrated APIs effortlessly, capitalizing on the framework's built-in features for streamlined data fetching and serverless functions.",
+      ],
+    },
+  ];
 
 
 

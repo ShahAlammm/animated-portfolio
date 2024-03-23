@@ -1,4 +1,5 @@
 
+
 import Navbar from "@/components/Navbar";
 import StarsCanvas from "@/components/StarBackground";
 
@@ -17,7 +18,7 @@ export default function LocaleLayout({
           <div>
           <Navbar/>
           </div>
-          {/* <StarsCanvas/> */}
+          <StarsCanvas/>
           {children}
         </body>
       </html>

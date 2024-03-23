@@ -5,6 +5,10 @@ import { TracingBeam } from '@/components/ui/tracing-beam';
 import About from '@/components/About';
 import { Spotlight } from '@/components/ui/Spotlight';
 import { Project } from '@/components/Project';
+import { WorkSkills } from '@/components/WorkSkills';
+
+
+
 
 
 
@@ -23,6 +27,7 @@ export default function Home() {
         <TracingBeam className='px-4'>
           <Banner />
           <About />
+          <div className="z-50"><WorkSkills/></div>
           <Project />
         </TracingBeam>
       </div>
