@@ -3,13 +3,13 @@ import { TypewriterEffectSmooth } from "../../components/ui/typewriter-effect";
 export function TextLoop() {
   const words = [
     {
-      text: "My",
+      text: "Hi",
     },
     {
-      text: "Name",
+      text: "I",
     },
     {
-      text: "Is",
+      text: "am",
     },
     {
       text: "Shah Alam.",

@@ -1,7 +1,8 @@
 "use client"
 import { LampContainer } from "@/components/ui/lamp";
 import { motion } from "framer-motion";
-import { TextGenerate } from "../Text/TextGenerate";
+import Image from "next/image";
+
 
 export function Lamp() {
   return (
@@ -14,9 +15,15 @@ export function Lamp() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+        className="mt-8  py-4  tracking-tight"
       >
-        Build lamps <br /> the right way
+        <Image
+        src={'https://i.ibb.co/pwVjytQ/american.jpg'}
+        height={500}
+        width={500}
+        alt="image"
+        className="z-10"
+        />
       </motion.h1>
     </LampContainer>
   );

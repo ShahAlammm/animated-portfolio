@@ -10,7 +10,7 @@ import { MdCall } from "react-icons/md";
 
 const Navbar = () => {
   return (
-    <div className="navbar fixed z-50">
+    <div className="navbar fixed z-50 bg-base-100 sm:bg-transparent">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">

@@ -18,7 +18,7 @@ export default function LocaleLayout({
           <div>
           <Navbar/>
           </div>
-          <StarsCanvas/>
+          {/* <StarsCanvas/> */}
           {children}
         </body>
       </html>

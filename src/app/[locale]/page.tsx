@@ -6,6 +6,7 @@ import About from '@/components/About';
 import { Spotlight } from '@/components/ui/Spotlight';
 import { Project } from '@/components/Project';
 import { WorkSkills } from '@/components/WorkSkills';
+import Contact from '@/components/Contact';
 
 
 
@@ -28,6 +29,7 @@ export default function Home() {
           <Banner />
           <About />
           <div className="z-50"><WorkSkills/></div>
+          <Contact/>
           <Project />
         </TracingBeam>
       </div>
