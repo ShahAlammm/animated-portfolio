@@ -1,9 +1,23 @@
 "use client";
 import React from "react";
 import { HeroParallax } from "../components/ui/hero-parallax";
+import { slideInFromLeft } from "@/utils/motion";
+import { SparklesIcon } from "@heroicons/react/24/solid";
+import {motion} from 'framer-motion';
 
 export function Project() {
-  return <HeroParallax products={products} />;
+  return (
+    <>
+      <motion.div
+        variants={slideInFromLeft(0.8)}
+        className='Welcome-box py-[16px] px-[7px] border border-[#7042f88b] opacity-[0.9]'
+      >
+        <SparklesIcon className='text-[#b49bff] mr-[2px] h-7 w-10' />
+        <h1 className="Welcome-text text-[13px]">Some Of My Visual Work</h1>
+      </motion.div>
+      <HeroParallax products={products} />
+    </>
+  );
 }
 export const products = [
   {

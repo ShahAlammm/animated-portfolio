@@ -1,15 +1,17 @@
+import { Card } from "@/utils/Card/Card";
 import { Globe } from "@/utils/World/Globe";
 
 
 const Contact = () => {
     return (
-        <div className="grid grid-cols-4 h-[700px]">
-            <div className="col-span-3">
-            <Globe />
-
-            </div>
-            <div className="col-span-1">
-
+        <div className="hero ">
+            <div className="hero-content flex-col lg:flex-row-reverse w-screen h-full">
+                <div>
+                    <Card />
+                </div>
+                <div className=" lg:w-1/2 h-72 md:h-[600px] ">
+                    <Globe />
+                </div>
             </div>
         </div>
     );
