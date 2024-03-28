@@ -13,8 +13,7 @@ import { TextLoop } from "@/utils/Text/TextLoop";
 const About = () => {
     return (
         <div>
-            <Skills />
-
+            {/* <Skills /> */}
             <div className="hero-content flex-col-reverse xl:flex-row">
                 <div className="w-full lg:w-1/2">
                     <Lamp />

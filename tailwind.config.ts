@@ -39,8 +39,8 @@ const config: Config = {
     },
   },
   plugins: [
-    addVariablesForColors,
     require("daisyui"),
+    addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
         {
