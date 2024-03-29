@@ -6,7 +6,8 @@ import { Project } from '@/components/Project';
 import Contact from '@/components/Contact';
 import Skills from '@/components/Skills';
 import Hero from '@/components/Hero';
-import Email from '@/utils/Email/Email';
+import { Email } from '@/utils/Contact/Email';
+
 
 
 
@@ -22,14 +23,14 @@ export default function Home() {
           fill="white"
         />
       </div>
-      <div className="w-full flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden">
+      <div className="w-full flex md:items-center md:justify-center antialiased bg-grid-white/[0.02] relative overflow-hidden z-40">
         <TracingBeam className='px-4'>
           <Hero />
           <Skills />
           <About />
           <Contact />
-          <Email />
           <Project />
+          <Email />
         </TracingBeam>
       </div>
     </>

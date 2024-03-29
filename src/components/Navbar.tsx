@@ -22,7 +22,7 @@ const Navbar = () => {
           <li><Link href={'#'}><MdCall className="text-xl"/></Link></li>
           </ul>
         </div>
-        <Link href={'/'} className="btn btn-ghost text-xl md:ml-16">SHAH ALAM</Link>
+        <Link href={'/'} className="btn btn-ghost text-white text-xl md:ml-16">SHAH ALAM</Link>
       </div>
       <div className="navbar-center hidden md:flex justify-center items-center glass rounded-full lg:w-1/4 button-primary">
         <ul className="menu menu-horizontal px-1 space-x-4 font-bold text-white">
